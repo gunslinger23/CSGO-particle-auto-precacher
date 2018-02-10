@@ -1,0 +1,14 @@
+addons:
+  apt_packages:
+    - lib32z1
+    - lib32stdc++6
+    - p7zip-full
+
+language: c
+
+env:
+  - SOURCEMOD=1.8
+  - SOURCEMOD=1.9
+
+script:
+    - 'bash travis/test.sh $SOURCEMOD;'
